@@ -1,0 +1,6 @@
+framework module Pods_DDPTest {
+  umbrella header "Pods-DDPTest-umbrella.h"
+
+  export *
+  module * { export * }
+}
