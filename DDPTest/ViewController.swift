@@ -11,17 +11,13 @@ import SwiftDDP
 
 class ViewController: UIViewController {
 
+//    let collection:MeteorCollection<Temp> = (UIApplication.sharedApplication().delegate as! AppDelegate).temps
+    let collection:MeteorCollection<Event> = (UIApplication.sharedApplication().delegate as! AppDelegate).events
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        Meteor.client.allowSelfSignedSSL = true
-        Meteor.client.logLevel = .Info
-        
-        Meteor.connect("wss://www.loopcowstudio.com/websocket") {
-            // do something after the client connects
-            print("Connected")
-        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -38,6 +34,13 @@ class ViewController: UIViewController {
         Meteor.loginWithGoogle("22026107675-jfeoijhr5qlpvds0v0dtlvpsv8njsioq.apps.googleusercontent.com", viewController: self)
     }
 
+    @IBAction func loginWithToken(sender: UIButton) {
+//        print(NSUserDefaults.standardUserDefaults().stringForKey("DDP_TOKEN"))
+        Meteor.call("users.loginWithToken", params: [NSUserDefaults.standardUserDefaults().stringForKey("DDP_TOKEN")!]) { result, error in
+            print(result)
+        }
+    }
+    
     @IBAction func logout(sender: UIButton) {
         Meteor.logout()
     }
@@ -56,6 +59,14 @@ class ViewController: UIViewController {
                 print(result)
             }
         }
+    }
+    
+    @IBAction func subscribe(sender: UIButton) {
+        
+        Meteor.subscribe("events.feeds") {
+            print(self.collection.sorted)
+        }
+        
     }
 }
 

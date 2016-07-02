@@ -334,6 +334,7 @@ extension DDPClient {
     */
     
     public func loginWithToken(callback: DDPMethodCallback?) -> Bool {
+        print (userData)
         if let token = userData.stringForKey(DDP_TOKEN),
             let tokenDate = userData.objectForKey(DDP_TOKEN_EXPIRES) {
                 print("Found token & token expires \(token), \(tokenDate)")

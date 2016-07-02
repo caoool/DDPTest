@@ -25,14 +25,14 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rwk-C6-D3a">
-                                <rect key="frame" x="20" y="96" width="48" height="30"/>
+                                <rect key="frame" x="20" y="134" width="48" height="30"/>
                                 <state key="normal" title="Logout"/>
                                 <connections>
                                     <action selector="logout:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Yyr-Lv-vdi"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dkx-Jm-J13">
-                                <rect key="frame" x="20" y="137" width="80" height="30"/>
+                                <rect key="frame" x="20" y="172" width="80" height="30"/>
                                 <state key="normal" title="Check User"/>
                                 <connections>
                                     <action selector="checkUserLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5Lw-kq-1Gn"/>
@@ -45,11 +45,25 @@
                                     <action selector="testConnection:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RFx-JQ-0lr"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oeA-IU-wFX">
+                                <rect key="frame" x="20" y="96" width="119" height="30"/>
+                                <state key="normal" title="Login With Token"/>
+                                <connections>
+                                    <action selector="loginWithToken:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nH7-TV-8Su"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iez-XZ-NAh">
-                                <rect key="frame" x="20" y="175" width="98" height="30"/>
+                                <rect key="frame" x="20" y="210" width="98" height="30"/>
                                 <state key="normal" title="List Calendars"/>
                                 <connections>
                                     <action selector="listCalendars:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wc5-gE-Afz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OXS-be-Y9e">
+                                <rect key="frame" x="20" y="248" width="186" height="30"/>
+                                <state key="normal" title="Subscribe to 'events.feeds'"/>
+                                <connections>
+                                    <action selector="subscribe:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0sn-Fq-p5Q"/>
                                 </connections>
                             </button>
                         </subviews>

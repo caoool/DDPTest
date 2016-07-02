@@ -7,15 +7,29 @@
 //
 
 import UIKit
+import SwiftDDP
+import CoreData
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    
+    let events = MeteorCollection<Event>(name: "events")
+    let temps = MeteorCollection<Temp>(name: "temps")
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        Meteor.client.allowSelfSignedSSL = true
+        Meteor.client.logLevel = .Info
+        
+        Meteor.connect("wss://www.loopcowstudio.com/websocket") {
+            // do something after the client connects
+            print("Connected")
+        }
+        print("Application Did Finish Launching")
         return true
     }
 

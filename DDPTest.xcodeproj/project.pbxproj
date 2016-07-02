@@ -13,6 +13,8 @@
 		895111A81D04DB49004A7F9F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 895111A61D04DB49004A7F9F /* Main.storyboard */; };
 		895111AA1D04DB49004A7F9F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 895111A91D04DB49004A7F9F /* Assets.xcassets */; };
 		895111AD1D04DB49004A7F9F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 895111AB1D04DB49004A7F9F /* LaunchScreen.storyboard */; };
+		8978B29E1D2462C100B2BF0E /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8978B29D1D2462C100B2BF0E /* Event.swift */; };
+		8978B2A01D24694400B2BF0E /* Temp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8978B29F1D24694400B2BF0E /* Temp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		895111A91D04DB49004A7F9F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		895111AC1D04DB49004A7F9F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		895111AE1D04DB49004A7F9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8978B29D1D2462C100B2BF0E /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		8978B29F1D24694400B2BF0E /* Temp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Temp.swift; sourceTree = "<group>"; };
 		CD8E6AFA1637B80F3742F850 /* Pods-DDPTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DDPTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-DDPTest/Pods-DDPTest.release.xcconfig"; sourceTree = "<group>"; };
 		E1803157C9CF66775A2FE530 /* Pods_DDPTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DDPTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -79,11 +83,13 @@
 			isa = PBXGroup;
 			children = (
 				895111A21D04DB49004A7F9F /* AppDelegate.swift */,
+				8978B29D1D2462C100B2BF0E /* Event.swift */,
 				895111A41D04DB49004A7F9F /* ViewController.swift */,
 				895111A61D04DB49004A7F9F /* Main.storyboard */,
 				895111A91D04DB49004A7F9F /* Assets.xcassets */,
 				895111AB1D04DB49004A7F9F /* LaunchScreen.storyboard */,
 				895111AE1D04DB49004A7F9F /* Info.plist */,
+				8978B29F1D24694400B2BF0E /* Temp.swift */,
 			);
 			path = DDPTest;
 			sourceTree = "<group>";
@@ -211,7 +217,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				895111A51D04DB49004A7F9F /* ViewController.swift in Sources */,
+				8978B29E1D2462C100B2BF0E /* Event.swift in Sources */,
 				895111A31D04DB49004A7F9F /* AppDelegate.swift in Sources */,
+				8978B2A01D24694400B2BF0E /* Temp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
