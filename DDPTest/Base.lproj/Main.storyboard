@@ -66,6 +66,13 @@
                                     <action selector="subscribe:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0sn-Fq-p5Q"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dOe-l0-WXC">
+                                <rect key="frame" x="20" y="286" width="91" height="30"/>
+                                <state key="normal" title="Set user tags"/>
+                                <connections>
+                                    <action selector="setUserTags:" destination="BYZ-38-t0r" eventType="touchUpInside" id="L6u-79-CxS"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>

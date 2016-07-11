@@ -68,5 +68,15 @@ class ViewController: UIViewController {
         }
         
     }
+    
+    @IBAction func setUserTags(sender: AnyObject) {
+        Meteor.call("users.setTags", params: [["a","b","c"]]) { result, error in
+            if ((error) != nil) {
+                print(error)
+            } else {
+                print(result)
+            }
+        }
+    }
 }
 
