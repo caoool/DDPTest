@@ -78,5 +78,36 @@ class ViewController: UIViewController {
             }
         }
     }
+    
+    @IBAction func insertEvent(sender: AnyObject) {
+        let jsonObject: [String: AnyObject] = [
+            "summary": "Some thing you might want",
+            "description": "I am optional",
+            "start": [
+                "dateTime": NSDate().stringFormattedAsRFC3339
+            ],
+            "end": [
+                "dateTime": NSDate().stringFormattedAsRFC3339
+            ]
+        ]
+        let calendarId = "caooolu@gmail.com"
+        Meteor.call("events.insert", params: [calendarId, jsonObject]) { result, error in
+            if ((error) != nil) {
+                print(error)
+            } else {
+                print(result)
+            }
+        }
+    }
+    
+    @IBAction func syncCalendar(sender: AnyObject) {
+        Meteor.call("calendars.sync", params: ["caooolu@gmail.com", "MdrGxH8SFRcZREcB4"]) { result, error in
+            if ((error) != nil) {
+                print(error)
+            } else {
+                print(result)
+            }
+        }
+    }
 }
 

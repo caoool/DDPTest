@@ -73,6 +73,20 @@
                                     <action selector="setUserTags:" destination="BYZ-38-t0r" eventType="touchUpInside" id="L6u-79-CxS"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0UO-Hv-ODO">
+                                <rect key="frame" x="20" y="324" width="82" height="30"/>
+                                <state key="normal" title="Insert Event"/>
+                                <connections>
+                                    <action selector="insertEvent:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fj9-2V-aWD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="glU-Xm-YWL">
+                                <rect key="frame" x="20" y="362" width="100" height="30"/>
+                                <state key="normal" title="Sync Calendar"/>
+                                <connections>
+                                    <action selector="syncCalendar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1d3-9x-JWZ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
