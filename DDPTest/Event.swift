@@ -16,7 +16,7 @@ class Event: MeteorDocument {
     var etag: String?
     var description1: String?
     var summary:String?
-    var start: NSDate?
+    var start: AnyObject?
     var end: NSDate?
     var location: String?
     var visibility: String?
@@ -55,7 +55,7 @@ class Event: MeteorDocument {
         }
         
         if (key == "start") {
-            self.start = value as? NSDate
+            self.start = value as AnyObject?
         }
         
         if (key == "end") {

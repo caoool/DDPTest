@@ -65,6 +65,15 @@ class ViewController: UIViewController {
         
         Meteor.subscribe("events.feeds") {
             print(self.collection.sorted)
+            for item in self.collection.sorted {
+                print(item.summary)
+                let time = item.start!["$date"] as! Double
+//                print(time)
+                let timeInterval = NSTimeInterval(time/1000.0)
+                let timeDate = NSDate(timeIntervalSince1970: timeInterval)
+                print(timeDate)
+                print(item.end)
+            }
         }
         
     }
